@@ -7,7 +7,7 @@ import { fetchReviews } from "@/util/fetchReviews";
 import { useWallet } from "@solana/wallet-adapter-react";
 import ReviewForm from "@/components/Form";
 
-const REVIEW_PROGRAM_ID = "2xuLAJcbZTqZJ3DNf3DcHgRg7a1dBmtfLnjyvgkNq286";
+const REVIEW_PROGRAM_ID = "Dw9agFuU5ajs12mw1NiNV2JKtF7p6vkfuBxaHq2rzexF";
 
 export default function Home() {
     const connection = new web3.Connection(web3.clusterApiUrl("devnet"));
