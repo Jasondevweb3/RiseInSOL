@@ -14,22 +14,23 @@
         "@project-serum/borsh": "^0.2.5",
         "@solana/wallet-adapter-react": "^0.15.8",
         "@solana/wallet-adapter-react-ui": "^0.9.11",
-        "@solana/wallet-adapter-wallets": "^0.16.10",
         "@solana/web3.js": "^1.50.1",
+        "@tailwindcss/postcss7-compat": "^2.2.17",
         "framer-motion": "^7.6.1",
         "next": "13.5.4",
         "react": "^18",
         "react-dom": "^18"
     },
     "devDependencies": {
+        "@solana/wallet-adapter-wallets": "^0.19.26",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
-        "autoprefixer": "^10",
+        "autoprefixer": "^10.4.17",
         "eslint": "^8",
         "eslint-config-next": "13.5.4",
         "postcss": "^8",
-        "tailwindcss": "^3",
+        "tailwindcss": "^3.4.1",
         "typescript": "^5"
     }
 }
