@@ -4,18 +4,22 @@ interface FormProps {
     title: string;
     description: string;
     rating: number;
+    location: string;
     setTitle: (value: string) => void;
     setDescription: (value: string) => void;
     setRating: (value: number) => void;
+    setlocation: (value: string) => void;
     handleSubmit: () => void;
 }
 const ReviewForm: FC<FormProps> = ({
     title,
     description,
     rating,
+    location,
     setTitle,
     setDescription,
     setRating,
+    setlocation,
     handleSubmit,
 }) => {
     const formSubmit = (e: any) => {
@@ -73,6 +77,20 @@ const ReviewForm: FC<FormProps> = ({
                         onChange={(e) => setRating(Number(e.target.value))}
                         max={10}
                         min={0}
+                    />
+                </div>
+
+                <div className="mb-4">
+                    <label className="block text-gray-400 text-sm font-bold mb-2">
+                        location
+                    </label>
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="location"
+                        type="text"
+                        placeholder="location"
+                        value={location}
+                        onChange={(e) => setlocation(e.target.value)}
                     />
                 </div>
 
